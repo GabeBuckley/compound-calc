@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title>compound-calc demo</title>
+    <style id="demo-page-styles">
+        body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 4rem;
+            background: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        header h1 {
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        main {
+
+            position: fixed;
+            top: 4rem;
+            bottom: 2rem;
+            width: 100%;
+            overflow-y: auto;
+        }
+
+        section {
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.mid-section {
+            flex-direction: row;
+        }
+
+        footer {
+            height: 2rem;
+            background: #999;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        footer a {
+            color: #333;
+            display: block;
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .widget-display {
+            min-width: 25rem;
+            min-height: 25rem;
+        }
+    </style>
+
+    <!--
+            INCLUDE THE CSS AND JS FILES IN YOUR PROJECT
+        -->
+    <link href="./dist/compound-calc.css" rel="stylesheet" />
+    <script type="text/javascript" src="./dist/compound-calc.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>compound-calc demo</h1>
+    </header>
+    <main>
+        <section class="leading-text">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Consectetur adipiscing elit. Integer faucibus eleifend euismod. Pellentesque tincidunt dolor
+                at commodo molestie. Curabitur lacinia cursus dui nec volutpat. Aenean rhoncus lacus feugiat velit
+                pharetra mattis.
+                Donec urna ex, vestibulum a laoreet sit amet, fringilla vel sapien. Praesent in felis eu turpis aliquam
+                interdum. Nunc
+                ac tristique arcu. Vivamus eu est id lacus vestibulum posuere vitae eget tellus.</p>
+        </section>
+        <section class="mid-section">
+            <article>
+                <h2>Vivamus ornare pellentesque facilisis</h2>
+                <p>Maecenas lacinia felis id leo lobortis semper. Nulla facilisis nisi nisi, mattis
+                    malesuada ex sagittis ac. Nullam maximus, est accumsan sodales ullamcorper, sapien ante feugiat
+                    arcu, ac convallis
+                    libero urna nec nisl. Sed eu congue nisl, sit amet tincidunt odio. Donec sed augue auctor, convallis
+                    velit dictum,
+                    vulputate mi. Proin ornare purus at odio bibendum vehicula. Vivamus pharetra, ante quis lacinia
+                    lacinia, ligula metus
+                    sollicitudin arcu, vitae dapibus urna risus bibendum diam. In hac habitasse platea dictumst.</p>
+                <p>Fusce placerat sapien eu
+                    massa pulvinar, eu scelerisque ante dignissim. Nunc iaculis tristique mauris a tempus. Nam vitae
+                    consectetur tortor.
+                    Cras aliquet elit auctor suscipit dictum. Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices posuere
+                    cubilia Curae; Quisque a pellentesque justo. Vivamus sed orci eget risus commodo porttitor eu
+                    euismod sem.</p>
+            </article>
+
+            <!--
+                Whichever element you wish the calculator to appear in, give it a unique id.
+
+                In this case we want the calculator to appear in the #calc-target element
+            -->
+            <aside id="calc-target" class="widget-display"></aside>
+
+        </section>
+        <section class="following-text">
+            <h2>Ut tempus mi purus</h2>
+            <p>Ac rutrum libero mollis nec. Aliquam eget suscipit arcu. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Vivamus placerat mauris eu nisi molestie tincidunt. Nulla ac congue nibh, nec pharetra
+                turpis. Nunc ut
+                faucibus nulla. Nunc tristique dolor eget sapien elementum facilisis. Suspendisse varius et nisi id
+                venenatis. Donec
+                vehicula ipsum eu bibendum vehicula. Sed id tellus placerat, blandit enim non, ultricies nulla. Vivamus
+                pharetra, eros
+                ut luctus molestie, quam odio lacinia dolor, vitae feugiat tortor tortor id tellus.</p>
+        </section>
+    </main>
+    <footer><a href="https://github.com/GabeBuckley/compound-calc" target="_new">View source</a></footer>
+    <!--
+        Include this script at the bottom of your page to instantiate the calculator
+    -->
+    <script>
+        window.addEventListener('load', function () {
+            new compoundCalc('calc-target');
+        });
+    </script>
+</body>
+
+</html>

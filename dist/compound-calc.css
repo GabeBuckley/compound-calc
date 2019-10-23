@@ -1,0 +1,291 @@
+/*
+    Feel free to change any of the colours etc here
+*/
+
+/**
+ *
+ * calc-body
+ * 
+ * The main background element for the container.
+ *
+ * background-color - sets the background colour for the calculator
+ * border-color - sets the border colour for the calculator
+ *
+ */
+div.calc-body {
+  background-color: #ccc;
+  border-color: #666;
+}
+
+/**
+ *
+ * field-label
+ * 
+ * The labels attached to the various inputs on the calculator.
+ *
+ * color - sets the text colour for labels
+ * font-size - sets the size of the text (in rem, px, pt etc)
+ * font-weight - sets the weight of the text displayed ['bold' | 'normal']
+ *
+ */
+label.field-label {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/**
+ *
+ * text-input
+ * 
+ * The text fields into which the user enters data using their keyboard.
+ *
+ * color - sets the colour of the text entered into the field
+ * font-size - sets the size of the text (in rem, px, pt etc)
+ * background-color - sets the background colour of the field
+ * border-color - sets the colour of the outline of the field
+ *
+ */
+input.text-input {
+  color: #333;
+  font-size: 1.125rem;
+  background-color: #fff;
+  border-color: #666;
+}
+
+/**
+ *
+ * text-input:focus
+ * 
+ * The text field which the user currently has their.
+ *
+ * outline-color - sets the colour of the outline of the field when the user is actively using it
+ *
+ */
+input.text-input:focus {
+  outline-color: #000;
+}
+
+/**
+ *
+ * drop-down
+ * 
+ * The pick-lists from which the user selects one of a number of values.
+ *
+ * color - sets the colour of the text entered into the field
+ * font-size - sets the size of the text (in rem, px, pt etc)
+ * background-color - sets the background colour of the field
+ * border-color - sets the colour of the outline of the field
+ *
+ */
+select.drop-down {
+  color: #333;
+  font-size: 1.125rem;
+  background-color: #fff;
+  border-color: #666;
+}
+
+/**
+ *
+ * drop-down:focus
+ * 
+ * The pick-list which the user currently has their.
+ *
+ * outline-color - sets the colour of the outline of the field when the user is actively using it
+ *
+ */
+select.drop-down:focus {
+  outline-color: #000;
+}
+
+/**
+ *
+ * calculator-button
+ * 
+ * The button the user clicks to initiate the calculation.
+ *
+ * color - sets the text colour for the button
+ * border-color - sets the colour of the button's border
+ * background-color - sets the colour of the background of the button
+ * font-size - sets the size of the text (in rem, px, pt etc)
+ * font-weight - sets the weight of the text displayed ['bold'| 'normal']
+ */
+button.calculator-button {
+  color: #000;
+  border-color: #333;
+  background-color: #999;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/**
+ Uncomment the following block for a wildly different theme
+**/
+
+/*
+
+div.calc-body {
+  background-color: #939;
+  border-color: #f3f;
+}
+
+label.field-label {
+  color: #0c0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+input.text-input {
+  color: #0c0;
+  font-size: 1.125rem;
+  background-color: #636;
+  border-color: #939;
+}
+
+input.text-input:focus {
+  outline-color: #f3f;
+}
+
+select.drop-down {
+  color: #0c0;
+  font-size: 1.125rem;
+  background-color: #636;
+  border-color: #939;
+}
+
+select.drop-down:focus {
+  outline-color: #f3f;
+}
+
+button.calculator-button {
+  color: #0f0;
+  border-color: #939;
+  background-color: #636;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                                        HERE BE DRAGONS
+
+*/
+
+/*
+    Be wary of changing anything below here unless you're very sure of your CSS chops
+*/
+div.calc-body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+div.calc-header,
+div.calc-field-row,
+div.calc-button-row,
+div.calc-footer {
+  flex: 1;
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+div.calc-header {
+}
+
+div.calc-field-row {
+}
+
+div.calc-button-row {
+  text-align: right;
+}
+
+div.calc-footer {
+}
+
+label.field-label {
+  display: block;
+  padding: 0 0.25rem;
+}
+
+div.calc-field-row input[type="text"],
+div.calc-field-row select {
+  display: block;
+  width: 100%;
+  padding: 0.25rem;
+  border-radius: 0.125rem;
+  border-width: 0.0625rem;
+}
+
+div.calc-button-row button {
+  padding: 0.25rem 0.75rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+}
+
+div.calc-button-row button:hover {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+div.calc-button-row button:active {
+  background-color: #fff;
+  outline: none;
+}
+
+div.calc-button-row button:focus {
+  outline: none;
+}
